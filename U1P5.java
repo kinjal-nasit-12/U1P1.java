@@ -5,7 +5,7 @@ import java.util.Scanner;
 class U1P5 {
 
     public static void main(String[] args) {
-        int x, y, z;
+        int x, y;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter value 1: ");
         x = s.nextInt();
