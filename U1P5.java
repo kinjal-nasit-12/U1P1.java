@@ -13,5 +13,6 @@ class U1P5 {
         y = s.nextInt();
         double h = Math.sqrt((x * x) + (y * y));
         System.out.println("Hypontenuse: " + h);
+        s.close();
     }
 }
