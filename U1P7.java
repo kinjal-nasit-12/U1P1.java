@@ -46,16 +46,27 @@ class U1P7 {
 
     public static void main(String args[]) {
         U1P7 s3 = new U1P7();
+        System.out.println("object 3 data.");
         s3.display();
+        
         U1P7 s2 = new U1P7(5);
+        System.out.println("object 2 data.");
         s2.display();
+        
         U1P7 s1 = new U1P7(5, 6);
+        System.out.println("object 1 data.");
         s1.display();
+        
         s3 = addition(s1, s2);
+        System.out.println("Addition of object 1 and object 2 is: ");
         s3.display();
+        
         s3 = subtraction(s1, s2);
+        System.out.println("Subtraction of object 1 and object 2 is: ");
         s3.display();
+        
         s3 = multiplication(s1, s2);
+        System.out.println("Multiplication of object 1 and object 2 is: ");
         s3.display();
     }
 }
