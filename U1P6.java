@@ -13,6 +13,7 @@ class U1P6 {
         w = s1.nextInt();
         area(l);
         area(l, w);
+        s1.close();
     }
 
     public static void area(int l) {
