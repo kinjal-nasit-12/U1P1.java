@@ -28,7 +28,7 @@ class U1P3 {
                 System.out.println("steering wheel cover total charges are: " + amt);
                 break;
             case 3:
-                amt = 7000 + (500 * 2.5) / 100;
+                amt = 7000 + (7000 * 4) / 100;
                 System.out.println("car lighting total charges are: " + amt);
                 break;
             case 4:
