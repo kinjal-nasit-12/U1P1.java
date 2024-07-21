@@ -19,8 +19,8 @@ class U1P7 {
     }
 
     public void display() {
-        System.out.println("value of R= " + r);
-        System.out.println("value of I= " + i);
+        System.out.println("R= " + r);
+        System.out.println("I= " + i);
     }
 
     public static U1P7 addition(U1P7 s1, U1P7 s2) {
