@@ -6,23 +6,23 @@ import java.util.Scanner;
 class U1P6 {
     public static void main(String[] args) {
         int l, w;
-        Scanner s1 = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("Enter length: ");
-        l = s1.nextInt();
+        l =  s.hasNextInt() ? s.nextInt() : 0;
         System.out.println("Enter width: ");
-        w = s1.nextInt();
+        w = s.hasNextInt() ? s.nextInt() : 0;
         area(l);
         area(l, w);
-        s1.close();
+        s.close();
     }
 
     public static void area(int l) {
-        int sa = l * l;
-        System.out.println("square area: " + sa);
+        int squareArea = l * l;
+        System.out.println("Square area: " + squareArea);
     }
 
     public static void area(int l, int w) {
-        int ra = l * w;
-        System.out.println("rectangle area: " + ra);
+        int rectangleArea = l * w;
+        System.out.println("Rectangle area: " + rectangleArea);
     }
 }
