@@ -4,32 +4,32 @@ years for a deposit of Rs.5000 for compound interest. Create necessary methods
 and constructors too */
 class U1P9 {
 
-    float r;
-    double ci, net_amount;
+    float rate;
+    double compoundInterest, netAmount;
     int n, amt;
 
     U1P9() {
-        r = 6.5f;
-        ci = 0.0f;
+        rate = 6.5f;
+        compoundInterest = 0.0f;
         n = 5;
         amt = 5000;
     }
 
-    public void Comp_int() {
-        ci = amt * Math.pow((1 + r / 100), n);
-        net_amount = amt + ci;
+    public void compoundInterest() {
+        compoundInterest = amt * Math.pow((1 + rate / 100), n);
+        netAmount = amt + compoundInterest;
     }
 
     public void display() {
-        System.out.println("Rate: " + r);
+        System.out.println("Rate: " + rate);
         System.out.println("Year: " + n);
         System.out.println("Amount: " + amt);
-        System.out.println("Compound interest: " + ci);
+        System.out.println("Compound interest: " + compoundInterest);
     }
 
     public static void main(String args[]) {
         U1P9 s = new U1P9();
-        s.Comp_int();
+        s.compoundInterest();
         s.display();
     }
 }
