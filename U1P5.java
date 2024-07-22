@@ -8,11 +8,11 @@ class U1P5 {
         int x, y;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter value 1: ");
-        x = s.nextInt();
+        x = s.hasNextInt() ? s.nextInt() : 0;
         System.out.println("Enter value 2: ");
-        y = s.nextInt();
-        double h = Math.sqrt((x * x) + (y * y));
-        System.out.println("Hypontenuse: " + h);
+        y = s.hasNextInt() ? s.nextInt() : 0;
+        double hypontenuse = Math.sqrt((x * x) + (y * y));
+        System.out.println("Hypontenuse: " + hypontenuse);
         s.close();
     }
 }
