@@ -6,35 +6,35 @@ discount and net amount payable by a customer. Create necessary methods and
 constructors. */
 class U1P8 {
 
-    int pamt;
-    float dis, net_amount;
+    int pAmount;
+    float discount, netAmount;
 
     U1P8(int amt) {
-        pamt = amt;
-        dis = 0.0f;
-        net_amount = 0.0f;
+        pAmount = amt;
+        discount = 0.0f;
+        netAmount = 0.0f;
     }
 
-    public void Cal_disc() {
-        if (pamt < 1000) {
-            dis = pamt * .10f;
-        } else if (pamt >= 1000) {
-            dis = pamt * .12f;
+    public void calculateDiscount() {
+        if (pamount < 1000) {
+            discount = pAmount * .10f;
+        } else if (pamount >= 1000) {
+            discount = pAmount * .12f;
         } else {
-            dis = pamt * .15f;
+            discount = pAmount * .15f;
         }
-        net_amount = pamt - dis;
+        netAmount = pAmount - discount;
     }
 
     public void display() {
-        System.out.println("Purchase amount: " + pamt);
-        System.out.println("Discount: " + dis);
-        System.out.println("Net amount: " + net_amount);
+        System.out.println("Purchase amount: " + pAmount);
+        System.out.println("Discount: " + discount);
+        System.out.println("Net amount: " + netAmount);
     }
 
     public static void main(String args[]) {
-        U1P8 p1 = new U1P8(500);
-        p1.Cal_disc();
-        p1.display();
+        U1P8 p = new U1P8(500);
+        p.calculateDiscount();
+        p.display();
     }
 }
