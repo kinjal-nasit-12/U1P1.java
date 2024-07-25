@@ -5,12 +5,11 @@ import java.util.Scanner;
 
 class U1P6 {
     public static void main(String[] args) {
-        int l, w;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter length: ");
-        l =  s.hasNextInt() ? s.nextInt() : 0;
+        int l =  s.hasNextInt() ? s.nextInt() : 0;
         System.out.println("Enter width: ");
-        w = s.hasNextInt() ? s.nextInt() : 0;
+        int w = s.hasNextInt() ? s.nextInt() : 0;
         area(l);
         area(l, w);
         s.close();
