@@ -16,9 +16,9 @@ class U1P8 {
     }
 
     public void calculateDiscount() {
-        if (pamount < 1000) {
+        if (pAmount < 1000) {
             discount = pAmount * .10f;
-        } else if (pamount >= 1000) {
+        } else if (pAmount > 1000 && pAmount <= 1500) {
             discount = pAmount * .12f;
         } else {
             discount = pAmount * .15f;
