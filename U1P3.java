@@ -13,7 +13,7 @@ class U1P3 {
         System.out.println("2.Steering wheel covers-15000rs.");
         System.out.println("3.Car lighting-7000rs.");
         System.out.println("4.Air purifiers-500rs.");
-        System.out.println("5.other items-enter amount.");
+        System.out.println("5.Other items-enter amount.");
         System.out.println("Enter your choice: ");
         Scanner s = new Scanner(System.in);
         int choice = s.hasNextInt() ? s.nextInt():0;
@@ -21,22 +21,22 @@ class U1P3 {
         switch (choice) {
             case 1:
                 amt = calculateAmount(15000, 2);
-                System.out.println("seat cover total charge are: " + amt);
+                System.out.println("Seat cover total charge are: " + amt);
                 break;
             case 2:
                 amt = calculateAmount (1500, 3);
-                System.out.println("steering wheel cover total charges are: " + amt);
+                System.out.println("Steering wheel cover total charges are: " + amt);
                 break;
             case 3:
                 amt = calculateAmount (500, 2.5);
-                System.out.println("car lighting total charges are: " + amt);
+                System.out.println("Car lighting total charges are: " + amt);
                 break;
             case 4:
                 amt = calculateAmount (500, 2.5);
                 System.out.println("Air purifiers total charges are: " + amt);
                 break;
             case 5:
-                System.out.println("enter amount: ");
+                System.out.println("Enter amount: ");
                 amt = s.hasNextFloat() ? s.nextFloat() : 0;
 
                 System.out.println("Enter item: ");
@@ -45,7 +45,7 @@ class U1P3 {
                 System.out.println(name + "total charges are: " + amt);
                 break;
             default:
-                System.out.println("wrong choice entered.");
+                System.out.println("Wrong choice entered.");
         }
         s.close();
     }
