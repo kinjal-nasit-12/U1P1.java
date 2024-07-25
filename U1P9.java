@@ -6,23 +6,23 @@ class U1P9 {
 
     float rate;
     double compoundInterest, netAmount;
-    int n, amt;
+    int year, amt;
 
     U1P9() {
         rate = 6.5f;
         compoundInterest = 0.0f;
-        n = 5;
+        year = 5;
         amt = 5000;
     }
 
     public void compoundInterest() {
-        compoundInterest = amt * Math.pow((1 + rate / 100), n);
+        compoundInterest = amt * Math.pow((1 + rate / 100), year);
         netAmount = amt + compoundInterest;
     }
 
     public void display() {
         System.out.println("Rate: " + rate);
-        System.out.println("Year: " + n);
+        System.out.println("Year: " + year);
         System.out.println("Amount: " + amt);
         System.out.println("Compound interest: " + compoundInterest);
     }
